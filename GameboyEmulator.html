@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> Gameboy </title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body onload="initCanvas();">
+    <header id="main-header">
+        <div class="container">
+            <h1>Gameboy Emulator</h1>
+            <p>This is an emulator that i wrote in C and now will rewrite it to javascript.</p>
+        </div>
+    </header>
+    <nav id="navigationBar">
+        <div class="container">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="GameboyEmulator.html">Gameboy</a></li>
+            </ol>
+        </div>
+    </nav>
+    <br />
+    <a href="https://github.com/koga25/GameboyEmulator" target="_blank"> C source code</a>
+    <canvas id="game-surface" width="160" height="144"></canvas>
+    <input type="file" id="file-selector" multiple />
+    <script src="graphics.js"></script>
+    <script src="gameboy.js"></script>
+    <script src="gameboyOpcodes.js"></script>
+</body>
+</html>
